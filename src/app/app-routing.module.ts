@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { IngresarPresupuestoComponent } from './components/ingresar-presupuesto/ingresar-presupuesto.component';
+import { GastosComponent } from './components/gastos/gastos.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',redirectTo:'/ingresaPrsupuesto',pathMatch:'full'},
+  {path:'ingresaPrsupuesto',component:IngresarPresupuestoComponent},
+  {path:'gastos',component:GastosComponent},
+  {path:'**',redirectTo:'/ingresaPrsupuesto',pathMatch:'full'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
