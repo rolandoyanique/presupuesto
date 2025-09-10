@@ -4,10 +4,10 @@ import { IngresarPresupuestoComponent } from './components/ingresar-presupuesto/
 import { GastosComponent } from './components/gastos/gastos.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/ingresaPrsupuesto',pathMatch:'full'},
-  {path:'ingresaPrsupuesto',component:IngresarPresupuestoComponent},
+  {path:'',redirectTo:'/ingresaPresupuesto',pathMatch:'full'},
+  {path:'ingresaPresupuesto',component:IngresarPresupuestoComponent},
   {path:'gastos',component:GastosComponent},
-  {path:'**',redirectTo:'/ingresaPrsupuesto',pathMatch:'full'}
+  {path:'**',redirectTo:'/ingresaPresupuesto',pathMatch:'full'}
 ];
 
 @NgModule({
