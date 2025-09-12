@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PresupuestoService } from 'src/app/services/presupuesto.service';
 
 @Component({
   selector: 'app-listar-gasto',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./listar-gasto.component.css']
 })
 export class ListarGastoComponent {
+  constructor(private _presupuestoService:PresupuestoService){
+    this._presupuestoService.getGastos().subscribe(data =>{
+      console.log(data);
+    });
+  }
 
 }
