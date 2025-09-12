@@ -14,3 +14,9 @@ background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, F
 .text-error{
     font-size:1rem
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/font/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
